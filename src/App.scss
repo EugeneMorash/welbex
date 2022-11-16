@@ -1,6 +1,32 @@
 .app-wrapper {
-
   max-width: 1180px;
   padding: 0 20px;
   margin: 0 auto;
+  position: relative;
+}
+
+.app-wrapper:after {
+  content: '';
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  left: 472px;
+  top: -200px;
+  background: #833AB4;
+  opacity: 0.5;
+  filter: blur(196px);
+  z-index: -1;
+}
+
+.app-wrapper:before {
+  content: '';
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  left: -132px;
+  top: 251px;
+  background: #961A1A;
+  opacity: 0.5;
+  filter: blur(196px);
+  z-index: -1;
 }

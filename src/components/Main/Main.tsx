@@ -2,8 +2,8 @@ import React from 'react';
 
 export function Main() {
     return (
-        <div>
+        <main className='main'>
             111
-        </div>
+        </main>
     );
 }
