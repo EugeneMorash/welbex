@@ -27,16 +27,29 @@
   }
 
   &__lists {
-    min-width: 410px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
-  &__list1 {
-    float: left;
-    margin-right: 52px;
+  &__list {
+    a {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #E4E5EA;
+      margin-bottom: 10px;
+    }
+
+    display: inline-block;
+    max-width: 50%;
+    flex: 0 1 50%;
   }
 
-  &__list2 {
-    float: right;
+  &__list-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 
   &__contact-block {
@@ -96,6 +109,10 @@
 
 }
 
+.list1 {
+  padding-right: 52px;
+}
+
 .list {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -112,5 +129,94 @@
 
   li:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 321px) {
+  .container {
+    padding: 0 15px 60px 15px;
+  }
+
+  .footer {
+
+    &__row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__title {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 20px;
+    }
+
+    &__company {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      margin-bottom: 30px;
+    }
+
+    &__contact-block {
+      text-align: left;
+    }
+
+    &__phone {
+      a {
+        color: #E4E5EA;
+      }
+
+      font-family: "Inter", sans-serif;
+      align-items: center;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+
+    &__social {
+      display: flex;
+      justify-content: left;
+      margin-bottom: 10px;
+      margin-left: 0;
+    }
+
+    &__icon {
+      img {
+        height: 24px;
+        width: 24px;
+      }
+
+      margin-right: 10px;
+    }
+
+    &__address {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: left;
+      margin-bottom: 50px;
+    }
+
+    &__icon:last-child {
+      margin-right: 0;
+    }
+
+    &__copyright {
+      a {
+        color: #E4E5EA;
+        margin-top: 5px;
+        text-decoration-line: underline;
+      }
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: left;
+      padding-bottom: 60px;
+    }
   }
 }

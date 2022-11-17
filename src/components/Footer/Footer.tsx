@@ -26,25 +26,20 @@ export function Footer() {
                                 Меню
                             </h5>
                             <div className='footer_lists'>
-                                <div className='footer__list1'>
-                                    <ul className="footer__menu list">
-                                        <li><a href="#r">Расчёт стоимости</a></li>
-                                        <li><a href="#r">Услуги</a></li>
-                                        <li><a href="#r">Виджеты</a></li>
-                                        <li><a href="#r">Интеграции</a></li>
-                                        <li><a href="#r">Наши клиенты</a></li>
-                                    </ul>
+                                <div className='footer__list'>
+                                    <div className='footer__list-wrapper list1'><a href="#r">Расчёт стоимости</a>
+                                        <a href="#r">Услуги</a>
+                                        <a href="#r">Виджеты</a>
+                                        <a href="#r">Интеграции</a>
+                                        <a href="#r">Наши клиенты</a></div>
                                 </div>
-                                <div className='footer__list2'>
-                                    <ul className="footer__menu list">
-                                        <li><a href="#r">Кейсы</a></li>
-                                        <li><a href="#r">Благодарственные письма</a></li>
-                                        <li><a href="#r">Сертификаты</a></li>
-                                        <li><a href="#r">Блог на Youtube</a></li>
-                                        <li><a href="#r">Вопрос / Ответ</a></li>
-                                    </ul>
+                                <div className='footer__list'>
+                                    <div className='footer__list-wrapper'><a href="#r">Кейсы</a>
+                                        <a href="#r">Благодарственные письма</a>
+                                        <a href="#r">Сертификаты</a>
+                                        <a href="#r">Блог на Youtube</a>
+                                        <a href="#r">Вопрос / Ответ</a></div>
                                 </div>
-
                             </div>
 
                         </div>
@@ -75,7 +70,7 @@ export function Footer() {
                                         <p>
                                             ©WELBEX 2022. Все права защищены.
                                         </p>
-                                        <a href="#">
+                                        <a href="#r">
                                             Политика конфиденциальности
                                         </a>
                                     </div>
