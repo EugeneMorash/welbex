@@ -28,7 +28,7 @@ export function Header() {
                         </ul>
                     </nav>
                     <div className="header__contacts">
-                        <a href='tel:+75555555555'>+7 555 555-55-55'</a>
+                        <a href='tel:+75555555555'>+7 555 555-55-55</a>
                         <a href="#r"><img src={telegram} alt="telegramm"/></a>
                         <a href="#r"><img src={viber} alt="viber"/></a>
                         <a href="#r"><img src={whatsapp} alt="whatsapp"/></a>

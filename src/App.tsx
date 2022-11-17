@@ -8,6 +8,7 @@ import {Integrations} from "./components/Integrations/Integrations";
 import {Cases} from "./components/Cases/Cases";
 import {Certificates} from "./components/Certificates/Certificates";
 import {Main} from "./components/Main/Main";
+import {Footer} from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                     <Route path='/cases/*' element={<Cases/>}/>
                     <Route path='/certificates/*' element={<Certificates/>}/>
                 </Routes>
+                <Footer/>
             </div>
         </BrowserRouter>
     );

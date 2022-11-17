@@ -1,0 +1,116 @@
+.container {
+  padding-top: 55px;
+  padding-bottom: 20px;
+  max-height: 315px;
+}
+
+.footer {
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #656566;
+    margin-bottom: 20px;
+  }
+
+  &__company {
+    margin-right: 98px;
+  }
+
+  &__lists {
+    min-width: 410px;
+  }
+
+  &__list1 {
+    float: left;
+    margin-right: 52px;
+  }
+
+  &__list2 {
+    float: right;
+  }
+
+  &__contact-block {
+    text-align: right;
+  }
+
+  &__phone {
+    a {
+      color: #E4E5EA;
+    }
+
+    font-family: "Inter", sans-serif;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 21px;
+    text-align: right;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+    min-width: 277px;
+    margin-left: 163px;
+  }
+
+  &__address {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    margin-bottom: 70px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__icon:last-child {
+    margin-right: 0;
+  }
+
+  &__copyright {
+    a {
+      color: #E4E5EA;
+      margin-top: 5px;
+      text-decoration-line: underline;
+    }
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+  }
+
+}
+
+.list {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  a {
+    color: #E4E5EA;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
