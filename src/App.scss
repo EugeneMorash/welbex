@@ -15,7 +15,6 @@
   background: #833AB4;
   opacity: 0.5;
   filter: blur(196px);
-  z-index: -1;
 }
 
 .app-wrapper:before {
@@ -28,5 +27,6 @@
   background: #961A1A;
   opacity: 0.5;
   filter: blur(196px);
+  -webkit-filter: blur(196px);
   z-index: -1;
 }

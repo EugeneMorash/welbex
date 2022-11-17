@@ -15,7 +15,7 @@ function App() {
             <div className="app-wrapper">
                 <Header/>
                 <Routes>
-                    <Route path='main/*' element={<Main/>}/>
+                    <Route path='/*' element={<Main/>}/>
                     <Route path='/services/*'
                            element={<Services/>}/>
                     <Route path='/widgets/*'
