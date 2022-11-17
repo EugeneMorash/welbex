@@ -95,6 +95,10 @@
     line-height: 20px;
   }
 
+  &__adaptive {
+    display: none;
+  }
+
   &__button {
     width: 262px;
     height: 61px;
@@ -123,6 +127,92 @@
   box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
   filter: blur(2.5px);
   backdrop-filter: blur(2px);
+}
+
+
+@media (max-width: 321px) {
+
+  .main {
+    padding-top: 40px;
+    margin-bottom: 69px;
+    padding-left: 14px;
+    background: url("./../../assets/bg.png");
+  }
+
+  .about {
+    &__row {
+      flex-direction: column;
+    }
+
+    &__heading {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    &__welbex {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      margin-bottom: 45px;
+    }
+  }
+
+  .cards {
+
+    &__row {
+      display: none;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+
+      span {
+        text-transform: lowercase;
+      }
+
+      text-align: left;
+    }
+
+    &__adaptive {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 16px;
+      margin-bottom: 45px;
+    }
+
+    &__item-adaptive {
+      flex: 0 1 50%;
+      text-align: left;
+      margin-bottom: 14px;
+    }
+
+    &__title-adaptive {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    &__title-adaptive:before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 1px;
+      background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+      left: -15px;
+      top: 8px;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
 }
 
 

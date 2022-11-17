@@ -1,7 +1,7 @@
 .header {
   margin-top: 46px;
   margin-bottom: 73px;
-  
+
   &__row {
     display: flex;
     justify-content: space-between;
@@ -108,6 +108,59 @@
   box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
   filter: blur(5px);
   backdrop-filter: blur(2px);
+}
+
+@media (max-width: 321px) {
+
+  .header {
+    z-index: 999;
+    margin-top: 0;
+    height: 55px;
+    background: #0E1014;
+    margin-bottom: 0;
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      padding: 0 8px;
+
+      li {
+        a {
+          color: #E4E5EA;
+          font-size: 12px;
+          line-height: 15px;
+          text-transform: uppercase;
+        }
+
+        margin: 0 8px;
+      }
+
+      li:last-child {
+        display: none;
+      }
+    }
+
+    &__contacts {
+      display: none;
+    }
+  }
+}
+
+.header:before {
+  display: none;
+}
+
+.header:after {
+  display: none;
 }
 
 

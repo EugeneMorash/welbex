@@ -66,6 +66,20 @@ export function Main() {
                                     </div>
                                 </div>
                             </div>
+                            <div className='cards__adaptive'>
+                                <div className='cards__item-adaptive'>
+                                    <p className='cards__title-adaptive'>Skype аудит</p>
+                                </div>
+                                <div className='cards__item-adaptive'>
+                                    <p className='cards__title-adaptive'>30 виджетов</p>
+                                </div>
+                                <div className='cards__item-adaptive'>
+                                    <p className='cards__title-adaptive'>Dashboard</p>
+                                </div>
+                                <div className='cards__item-adaptive'>
+                                    <p className='cards__title-adaptive'>Месяц аmoCRM</p>
+                                </div>
+                            </div>
                             <button className='cards__button'>Получить консультацию</button>
                         </div>
                     </div>

@@ -30,3 +30,18 @@
   -webkit-filter: blur(196px);
   z-index: -1;
 }
+
+@media (max-width: 321px) {
+  .app-wrapper {
+    max-width: 321px;
+    padding: 0;
+  }
+
+  .app-wrapper:after {
+    display: none;
+  }
+
+  .app-wrapper:before {
+    display: none;
+  }
+}
