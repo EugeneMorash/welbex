@@ -1,0 +1,203 @@
+.main {
+    margin-bottom: 69px;
+    min-height: 100%;
+}
+
+.about__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__heading {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.about__welbex {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    margin-bottom: 30px;
+}
+
+.about__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.cards {
+    max-width: 330px;
+}
+
+.cards__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards__column {
+    flex: 0 1 50%;
+}
+
+.cards__title {
+    margin-bottom: 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+}
+
+.cards__title span {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: linear-gradient(-45deg, #FCB045 36.99%, #FD1D1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cards__item {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.cards__card-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.cards__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.cards__adaptive {
+    display: none;
+}
+
+.cards__button {
+    width: 262px;
+    height: 61px;
+    background: #4077F3;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #E4E5EA;
+}
+
+.cards:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    right: 411px;
+    top: 428px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%);
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+
+@media (max-width: 321px) {
+    .main {
+        padding-top: 40px;
+        margin-bottom: 69px;
+        padding-left: 14px;
+        background: url("./src/assets/bg.png");
+    }
+
+    .about__row {
+        flex-direction: column;
+    }
+
+    .about__heading {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .about__welbex {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 15px;
+    }
+
+    .about__text {
+        margin-bottom: 45px;
+    }
+
+    .cards__row {
+        display: none;
+    }
+
+    .cards__title {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .cards__title span {
+        text-transform: lowercase;
+    }
+
+    .cards__adaptive {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 16px;
+        margin-bottom: 45px;
+    }
+
+    .cards__item-adaptive {
+        flex: 0 1 50%;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+
+    .cards__title-adaptive {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .cards__title-adaptive:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+        left: -15px;
+        top: 8px;
+    }
+
+    .cards__button {
+        display: none;
+    }
+}

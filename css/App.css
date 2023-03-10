@@ -6,7 +6,7 @@
 }
 
 .app-wrapper:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 259px;
   height: 259px;
@@ -18,7 +18,7 @@
 }
 
 .app-wrapper:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 311px;
   height: 311px;
@@ -26,7 +26,6 @@
   top: 251px;
   background: #961A1A;
   opacity: 0.5;
-  border-radius: 50%;
   filter: blur(196px);
   -webkit-filter: blur(196px);
   z-index: -1;
@@ -37,11 +36,9 @@
     max-width: 321px;
     padding: 0;
   }
-
   .app-wrapper:after {
     display: none;
   }
-
   .app-wrapper:before {
     display: none;
   }
