@@ -10,11 +10,13 @@
   position: absolute;
   width: 259px;
   height: 259px;
+  border-radius: 50%;
   left: 472px;
-  top: -200px;
+  top: -154px;
   background: #833AB4;
-  opacity: 0.5;
-  filter: blur(196px);
+  opacity: 0.15;
+  filter: blur(98px);
+  z-index: -1;
 }
 
 .app-wrapper:before {
@@ -25,10 +27,10 @@
   left: -132px;
   top: 251px;
   background: #961A1A;
-  opacity: 0.5;
+  opacity: 0.15;
   border-radius: 50%;
   filter: blur(196px);
-  -webkit-filter: blur(196px);
+  -webkit-filter: blur(98px);
   z-index: -1;
 }
 
