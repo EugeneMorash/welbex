@@ -16,6 +16,7 @@
   background: #833AB4;
   opacity: 0.15;
   filter: blur(98px);
+  -webkit-filter: blur(98px);
   z-index: -1;
 }
 
@@ -29,7 +30,7 @@
   background: #961A1A;
   opacity: 0.15;
   border-radius: 50%;
-  filter: blur(196px);
+  filter: blur(98px);
   -webkit-filter: blur(98px);
   z-index: -1;
 }
